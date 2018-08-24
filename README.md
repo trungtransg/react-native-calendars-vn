@@ -5,6 +5,9 @@
 
 This module includes various customizable react native calendar components.
 
+## A Custom new
+Be able to configure color for Sunday and Saturday for Agenda
+
 The package is both **Android** and **iOS** compatible.
 
 ## Try it out
@@ -451,11 +454,19 @@ An advanced agenda component that can display interactive listings for calendar 
   refreshControl={null}
   // agenda theme
   theme={{
-    ...calendarTheme,
-    agendaDayTextColor: 'yellow',
-    agendaDayNumColor: 'green',
-    agendaTodayColor: 'red',
-    agendaKnobColor: 'blue'
+    //...calendarTheme,
+    //agendaDayTextColor: 'yellow',
+    //agendaDayNumColor: 'green',
+    //agendaTodayColor: 'red',
+    agendaKnobColor: 'blue',
+    selectedDayBackgroundColor: '#3c4155',
+    selectedDotColor: '#e5634d',
+    textSectionTitleColor: '#3c4155',
+    //custom new
+    textSunSectionTitleColor: '#ec6c6c',
+    textSatSectionTitleColor: '#3592cd',
+    daySunTextColor: '#ec6c6c',
+    daySatTextColor: '#3592cd',
   }}
   // agenda container style
   style={{}}
